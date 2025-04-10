@@ -3,10 +3,9 @@ import sqlite3
 from flask_cors import CORS, cross_origin
 
 
-app = Flask(__name__)
-# app = Flask(__name__, 
-#             template_folder='./',
-#             static_folder='./')
+app = Flask(__name__, 
+            template_folder='./_frontend/users/dist/',
+            static_folder='./_frontend/users/dist/assets/')
 
 CORS(app)
 
